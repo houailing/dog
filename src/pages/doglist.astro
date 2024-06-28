@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '@fontsource/source-code-pro';
+---
+<Layout title="狗狗图鉴">
+  <main>
+    <ul role="list" class="link-card-grid">
+      <Card
+	    href="/"
+        title="返回首页"
+        body=""
+      />
+    </ul>
+  </main>
+  <main style="display: flex; flex-wrap: wrap;justify-content: center;">
+    <div class="pattern">
+      <img
+        src="/public/2-150403152450K3.jpg"
+      />
+      <p style="text-align: center;margin: 0;">博美犬</p>
+    </div>
+
+    <div class="pattern">
+      <img
+        src="/public/20190531062208790.png"
+      />
+      <p style="text-align: center;margin: 0;">美国恶霸犬</p>
+    </div>   
+    
+    <div class="pattern">
+      <img
+        src="	/public/2-150410144413b3.jpg"
+      />
+      <p style="text-align: center;margin: 0;">法国斗牛犬</p>
+    </div>  
+
+    <div class="pattern">
+      <img
+        src="	/public/20190917035026685.jpg
+        "
+      />
+      <p style="text-align: center;margin: 0;">中华田园犬</p>
+    </div>  
+
+    <div class="pattern">
+      <img
+        src="		/public/3-1505231055560-L.jpg
+        "
+      />
+      <p style="text-align: center;margin: 0;">银狐犬</p>
+    </div>
+
+    <div class="pattern">
+      <img
+        src="		/public/3-150411161344204.jpg
+        "
+      />
+      <p style="text-align: center;margin: 0;">圣伯纳犬</p>
+    </div>
+
+    <div class="pattern">
+      <img
+        src="	/public/2-150303134343442.png
+        "
+      />
+      <p style="text-align: center;margin: 0;">哈士奇</p>
+    </div>
+
+    <div class="pattern">
+      <img
+        src="	/public/3-1506010944170-L.jpg"
+      />
+      <p style="text-align: center;margin: 0;">扭玻利顿犬</p>
+    </div>
+
+    <div class="pattern">
+      <img
+        src="	/public/2-1504101P53Y27.jpg"
+      />
+      <p style="text-align: center;margin: 0;">腊肠犬</p>
+    </div>
+
+    <div class="pattern">
+      <img
+        src="	/public/2-1503031P52O09.jpg"
+      />
+      <p style="text-align: center;margin: 0;">日本秋田犬</p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .card-margin {
+    margin-left: 20px;
+  }
+  .link-card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  p{
+	font-family: "Source Code Pro";
+	background-color: aliceblue;
+  }
+  .pattern {
+    margin-left: 2%; 
+    margin-top: 2%;
+    width: 200px;
+  }
+  img{
+    width: 200px; 
+    margin-right: 10px;
+    height: 180px;
+  }
+</style>

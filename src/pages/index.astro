@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '@fontsource/source-code-pro';
+---
+
+<Layout title="狗狗关爱网">
+  <main>
+    <main >
+		<div style="justify-content: center;display:flex">
+			<img
+				src="/public/R.jpg"
+				alt="A picture of a dog"
+				style="width: 50%; ; margin-right: 1rem;"
+			/>
+		</div>
+		
+		<div style="margin: 30px;">
+			<p>狗作为人类最忠诚的伴侣之一，
+				不仅给我们带来了无尽的欢乐和陪伴，还有着许多潜在的好处。
+				随着人们生活水平的提高和生活方式的改变，越来越多的人选择养狗。
+				我们将从多个方面探讨养狗的好处，以揭示为什么越来越多的人选择养狗。</p>
+			<p>1. 促进健康：
+				养狗可以促进人类的身心健康。研究表明，与狗接触可以降低人体的血压和心率，减轻焦虑和压力。
+				此外，与狗一起散步或跑步可以增加户外活动的机会，促进身体的运动，有助于减肥和保持健康的体重。
+				而且，养狗可以增强人类的免疫系统，减少患上感染性疾病的风险。</p>
+			<p>2. 增加社交：
+
+				养狗可以增加人类的社交机会。遛狗的过程中，常常会遇到其他养狗的人，通过与他们交流，
+				可以扩大社交圈子，结交新朋友。此外，狗也可以成为人类社交的中介，与其他人交谈的话题往往围绕着狗展开，
+				为人际交往提供了更多的话题和共同兴趣。</p>
+			<p>3. 提升心情：
+
+				养狗可以提升人类的心情。狗的陪伴可以带来无尽的欢乐和快乐，它们常常会用它们无拘无束、纯真的态度来感染主人，
+				让人们忘记烦恼和压力，享受当下的美好时光。此外，与狗互动还能促进人体内多巴胺等神经递质的分泌，增加幸福感和满足感。</p>
+			<p>4. 提供安全感：
+
+				养狗可以提供人类更多的安全感。许多狗种天生具有警惕性和保护本能，它们可以在家庭中起到守护者的作用，
+				警觉并及时应对外来威胁。对于独居者或者家庭来说，有一只警惕的狗犬在身边，可以增加安全感，让人们更加放心和安心。</p>
+			<p>5. 增强责任感：
+
+				养狗可以增强人类的责任感和自律能力。照顾一只狗需要投入大量的时间和精力，包括喂养、遛狗、清洁等。
+				这些责任让人们学会了如何为他人负责，培养了耐心和毅力。特别是对于孩子来说，养狗可以培养他们的责任感和爱心，
+				教会他们如何关爱和照顾他人。</p>
+			<p>6. 陪伴孤独：
+
+				养狗可以陪伴人们度过孤独的时光。特别是对于老年人或者独居者来说，有一只狗犬作为伴侣，可以缓解孤独感，给予他们温暖和安慰。
+				狗不仅是最忠诚的朋友，还是最好的陪伴者，它们的存在让人们不再感到孤单。</p>
+		</div>
+	</main>
+    <ul role="list" class="link-card-grid">
+      <Card
+	    href="/doglist"
+        title="狗狗图鉴"
+        body=""
+      />
+      <Card
+        href="/about"
+        title="关于我们"
+        body=""
+      />
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  .card-margin {
+    margin-left: 20px;
+  }
+  .link-card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  p{
+	font-family: "Source Code Pro";
+	background-color: aliceblue;
+  }
+</style>
