@@ -2,8 +2,8 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://houailing.github.com',
-    base: '',
+    site: 'https://houailing.github.io',
+    base: 'pages',
     vite: {
         plugins: [
           {
