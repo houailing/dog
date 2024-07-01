@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://github.com/houailing/houailing.github.io-www.dog.git',
+    site: 'https://github.com/houailing/Hal.github.io-www.dog.git',
     base: '',
     vite: {
         plugins: [
