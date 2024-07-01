@@ -2,14 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import '@fontsource/source-code-pro';
+import myImportedImage from "../../public/R.jpg"
+import { Image } from 'astro:assets';
 ---
 
 <Layout title="狗狗关爱网">
   <main>
     <main >
 		<div style="justify-content: center;display:flex">
-			<img
-				src="../../public/R.jpg"
+			<Image src={myImportedImage}
 				alt="A picture of a dog"
 				style="width: 50%; ; margin-right: 1rem;"
 			/>
