@@ -4,7 +4,7 @@ import Card from '../components/Card.astro';
 import '@fontsource/source-code-pro';
 ---
 
-<Layout title="关于我们">
+<Layout title="你就宠Ta吧">
 <main style="margin-right:30px">
     <ul role="list" class="link-card-grid">
         <Card
@@ -14,59 +14,63 @@ import '@fontsource/source-code-pro';
         />
     </ul>
 </main>
-  <section class="page-background">
-    <h1>关于我们</h1>
-    <h2>我们是谁</h2>
-    <p>欢迎来到狗狗关爱网！我们是一个致力于为所有狗狗提供关爱、支持和信息的平台。无论你是一个新手宠物主人，还是一个有经验的养狗爱好者，我们都在这里为你提供最全面、最新的狗狗相关资讯和服务。</p>
+<main class="page-background">
+  <!-- <div style="justify-content: center;display:flex">
+    <img
+      src="/dog/123.jpg"
+      alt="A picture of a dog"
+      style="width: 50%; ; margin-right: 1rem;"
+    />
+  </div> -->
+  
+  <div style="margin: 30px;">
+    <p>狗作为人类最忠诚的伴侣之一，
+      不仅给我们带来了无尽的欢乐和陪伴，还有着许多潜在的好处。
+      随着人们生活水平的提高和生活方式的改变，越来越多的人选择养狗。
+      我们将从多个方面探讨养狗的好处，以揭示为什么越来越多的人选择养狗。</p>
+    <p>1. 促进健康：
+      养狗可以促进人类的身心健康。研究表明，与狗接触可以降低人体的血压和心率，减轻焦虑和压力。
+      此外，与狗一起散步或跑步可以增加户外活动的机会，促进身体的运动，有助于减肥和保持健康的体重。
+      而且，养狗可以增强人类的免疫系统，减少患上感染性疾病的风险。</p>
+    <p>2. 增加社交：
 
-    <h2>我们的使命</h2>
-    <p>我们的使命是通过提供专业、可信赖的信息和资源，帮助狗狗获得最佳的生活质量。我们坚信每只狗狗都值得被爱和关心，我们致力于传播这种理念。</p>
+      养狗可以增加人类的社交机会。遛狗的过程中，常常会遇到其他养狗的人，通过与他们交流，
+      可以扩大社交圈子，结交新朋友。此外，狗也可以成为人类社交的中介，与其他人交谈的话题往往围绕着狗展开，
+      为人际交往提供了更多的话题和共同兴趣。</p>
+    <p>3. 提升心情：
 
-    <h2>我们的愿景</h2>
-    <p>我们希望成为全球狗狗爱好者的首选平台，提供一站式的狗狗关爱解决方案。从健康护理、行为训练，到营养饮食和狗狗用品推荐，我们努力覆盖所有你需要知道的养狗知识。</p>
+      养狗可以提升人类的心情。狗的陪伴可以带来无尽的欢乐和快乐，它们常常会用它们无拘无束、纯真的态度来感染主人，
+      让人们忘记烦恼和压力，享受当下的美好时光。此外，与狗互动还能促进人体内多巴胺等神经递质的分泌，增加幸福感和满足感。</p>
+    <p>4. 提供安全感：
 
-    <h2>我们的故事</h2>
-    <p>狗狗关爱网成立于2023年，由一群热爱狗狗的人士创立。我们的创始团队包括兽医、宠物训练师和资深的狗狗主人，他们都希望通过这个平台，为更多的狗狗和他们的主人提供帮助和支持。</p>
+      养狗可以提供人类更多的安全感。许多狗种天生具有警惕性和保护本能，它们可以在家庭中起到守护者的作用，
+      警觉并及时应对外来威胁。对于独居者或者家庭来说，有一只警惕的狗犬在身边，可以增加安全感，让人们更加放心和安心。</p>
+    <p>5. 增强责任感：
 
-    <h2>我们的团队</h2>
-    <p>我们拥有一支充满激情和经验丰富的团队，包括兽医专家、宠物行为学家、营养师和宠物爱好者。我们的每一篇文章和每一个建议都经过仔细的研究和审核，以确保为你提供最准确和有用的信息。</p>
+      养狗可以增强人类的责任感和自律能力。照顾一只狗需要投入大量的时间和精力，包括喂养、遛狗、清洁等。
+      这些责任让人们学会了如何为他人负责，培养了耐心和毅力。特别是对于孩子来说，养狗可以培养他们的责任感和爱心，
+      教会他们如何关爱和照顾他人。</p>
+    <p>6. 陪伴孤独：
 
-    <h2>我们的价值观</h2>
-    <ul>
-      <li><strong>关爱</strong>：我们关心每一只狗狗的福祉，致力于提供最好的关爱和支持。</li>
-      <li><strong>诚信</strong>：我们提供的信息和建议都是基于专业知识和经验，绝不夸大或误导。</li>
-      <li><strong>社区</strong>：我们致力于建立一个互助互爱的狗狗爱好者社区，让每个成员都能找到支持和鼓励。</li>
-    </ul>
-
-    <h2>我们的服务</h2>
-    <ul>
-      <li><strong>狗狗健康</strong>：提供全面的狗狗健康护理知识，包括常见疾病预防和治疗建议。</li>
-      <li><strong>行为训练</strong>：专业的训练技巧和方法，帮助你培养一只听话乖巧的狗狗。</li>
-      <li><strong>营养饮食</strong>：推荐科学的饮食方案，确保狗狗摄取均衡营养。</li>
-      <li><strong>狗狗用品</strong>：精选优质的狗狗用品和玩具，让你的狗狗生活更加丰富多彩。</li>
-    </ul>
-
-    <h2>联系我们</h2>
-    <p>如果你有任何问题或建议，欢迎随时与我们联系。你可以通过以下方式找到我们：</p>
-    <ul>
-      <li><strong>邮箱</strong>：info@dogcare.com</li>
-      <li><strong>电话</strong>：123-456-7890</li>
-      <li><strong>地址</strong>：123 狗狗街，宠物城市，PC 12345</li>
-    </ul>
-    <p>我们期待与你一起，共同创造一个更加关爱狗狗的世界！</p>
-  </section>
+      养狗可以陪伴人们度过孤独的时光。特别是对于老年人或者独居者来说，有一只狗犬作为伴侣，可以缓解孤独感，给予他们温暖和安慰。
+      狗不仅是最忠诚的朋友，还是最好的陪伴者，它们的存在让人们不再感到孤单。</p>
+  </div>
+</main>
 </Layout>
 
 <style>
-    .page-background {
-      margin: 30px;
-      font-family: 'Source Code Pro', monospace;
-      background-image: url('/dog/dog.jpg'); /* 请将此处替换为你的背景图路径 */
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      color: #fff; /* 根据背景图的颜色调整文本颜色 */
-    }
+  .page-background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/dog/123.jpg'); /* 请将此处替换为你的背景图路径 */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
     .page-background::before {
       content: '';
       position: absolute;
@@ -74,7 +78,7 @@ import '@fontsource/source-code-pro';
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+      /* background-color: rgba(0, 0, 0, 0.5); 半透明黑色遮罩 */
       z-index: 1;
     }
     .about-section {

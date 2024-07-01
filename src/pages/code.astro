@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '@fontsource/source-code-pro';
+---
+
+<Layout title="铲屎官须知">
+<main style="margin-right:30px">
+    <ul role="list" class="link-card-grid">
+        <Card
+        href="/dog/"
+        title="返回首页"
+        body=""
+        />
+    </ul>
+</main>
+<main class="page-background">
+  <!-- <div style="justify-content: center;display:flex">
+    <img
+      src="/dog/123.jpg"
+      alt="A picture of a dog"
+      style="width: 50%; ; margin-right: 1rem;"
+    />
+  </div> -->
+  
+  <div class="content-box">
+    <p>养狗前准备</p>
+    <p>每条狗狗都是一条生命，无论我们想养哪一种宠物，都是要对它负责，不能弃养!提前了解养狗知识，想想你是否能接受养狗的经济支出、每天遛狗铲屎、狗狗拆家、掉毛打扫卫生、狗狗乱叫乱尿、身体健康，甚至还有教育问题等等!</p>
+
+    <p>选择狗狗</p>
+    <ul>
+      <li>尽量选择2月龄以上的，至少打过一针疫苗的</li>
+      <li>选择正规渠道，优先正规狗舍或朋友家的狗，不要随随便便从网上买狗，风险很高</li>
+      <li>从动物救助组织或医院等领养</li>
+    </ul>
+
+    <p>关于疫苗</p>
+    <ul>
+      <li>打疫苗和驱虫之间需间隔7天</li>
+      <li>狗狗出生45天就可以开始注射疫苗，第一年需要注射3针联苗+1针狂犬，每针间隔15-21天，之后每年注射1针联苗+1针狂犬</li>
+      <li>建议全部疫苗注射完去检测一下抗体，确定是否接种成功</li>
+    </ul>
+
+    <p>关于驱虫</p>
+    <ul>
+      <li>接狗回家后建议先观察一周再进行驱虫，驱虫需保证狗狗身体状态健康，没有拉稀软便感冒等</li>
+      <li>分体内驱虫和体外驱虫，频率:一月一次</li>
+    </ul>
+
+    <p>饮食</p>
+    <ul>
+      <li>提前问清楚狗狗饮食习惯</li>
+      <li>刚到家的狗狗不要立马换粮，要遵循7日换粮逐步替换，不然狗狗容易肠胃不适拉稀</li>
+      <li>可以准备一些帮助狗狗肠胃消化的益生菌以及微量元素营养剂等</li>
+    </ul>
+
+    <p>物品</p>
+    <ul>
+      <li>狗窝、狗笼子、食盆、水盆、狗粮、羊奶粉、尿垫、牵引绳、玩具、常用药品</li>
+      <li>如果是新收的话前期不建议自己在家给狗狗洗澡</li>
+    </ul>
+  </div>
+</main>
+</Layout>
+
+<style>
+  .page-background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/dog/123.jpg'); /* 请将此处替换为你的背景图路径 */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+    .page-background::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background-color: rgba(0, 0, 0, 0.5); 半透明黑色遮罩 */
+      z-index: 1;
+    }
+    .about-section {
+      padding: 2rem;
+      border-radius: 10px;
+      position: relative;
+      z-index: 2;
+    }
+    .about-section h1, .about-section h2, .about-section p, .about-section ul, .about-section li {
+      margin-bottom: 1rem;
+    }
+    .about-section ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .about-section {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      .about-section h1 {
+        font-size: 1.5rem;
+      }
+      .about-section h2 {
+        font-size: 1.25rem;
+      }
+      .about-section p, .about-section ul, .about-section li {
+        font-size: 1rem;
+      }
+    }
+  </style>
