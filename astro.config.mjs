@@ -2,8 +2,8 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://houailing.github.io',
-    base: 'dog',
+    site: 'https://houailing.github.io/Hal.github.io',
+    base: '/Hal.github.io/', // 设置为你的仓库名
     vite: {
         plugins: [
           {
